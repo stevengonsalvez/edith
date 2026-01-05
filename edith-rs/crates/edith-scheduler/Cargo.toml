@@ -1,0 +1,29 @@
+[package]
+name = "edith-scheduler"
+description = "Cron scheduling and periodic task execution for Edith"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+edith-config = { workspace = true }
+
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+async-trait = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+parking_lot = { workspace = true }
+
+# Cron expression parsing
+cron = { workspace = true }
+humantime = { workspace = true }
+
+[dev-dependencies]
+tokio-test = { workspace = true }

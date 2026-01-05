@@ -1,0 +1,42 @@
+# Rust
+/target/
+**/target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
+# Build artifacts
+*.so
+*.rlib
+*.dll
+*.dylib
+
+# Debug
+debug/
+*.dSYM/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+
+# Project specific
+clawdis-reference/
+research/
+
+# Session/state data
+*.db
+*.db-journal
+.edith/

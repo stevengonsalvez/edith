@@ -1,0 +1,30 @@
+[package]
+name = "edith-protocol"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+description = "Gateway WebSocket protocol types and validation for Edith"
+license.workspace = true
+
+[dependencies]
+# Serialization
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+# Error handling
+thiserror = { workspace = true }
+
+# Time
+chrono = { workspace = true }
+
+# Async
+tokio = { workspace = true }
+
+# Caching with TTL for deduplication
+moka = { workspace = true }
+
+# UUID for connection/run IDs
+uuid = { workspace = true }
+
+[dev-dependencies]
+tokio-test = { workspace = true }

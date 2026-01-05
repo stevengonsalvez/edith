@@ -1,0 +1,28 @@
+[package]
+name = "edith-config"
+description = "Configuration management for Edith gateway"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+json5 = { workspace = true }
+thiserror = { workspace = true }
+directories = { workspace = true }
+dotenvy = { workspace = true }
+tracing = { workspace = true }
+once_cell = { workspace = true }
+chrono = { workspace = true }
+regex = { workspace = true }
+url = { workspace = true }
+sha2 = { workspace = true }
+tokio = { workspace = true }
+dirs = { workspace = true }
+
+[dev-dependencies]
+tempfile = { workspace = true }
+tokio-test = { workspace = true }

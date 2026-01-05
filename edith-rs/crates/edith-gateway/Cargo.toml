@@ -1,0 +1,50 @@
+[package]
+name = "edith-gateway"
+description = "HTTP/WebSocket gateway server for Edith"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+edith-config = { workspace = true }
+edith-session = { workspace = true }
+edith-providers = { workspace = true }
+edith-llm = { workspace = true }
+edith-protocol = { workspace = true }
+
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+axum = { workspace = true }
+axum-extra = { workspace = true }
+tower = { workspace = true }
+tower-http = { workspace = true }
+hyper = { workspace = true }
+hyper-util = { workspace = true }
+tokio-tungstenite = { workspace = true }
+futures-util = { workspace = true }
+
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+
+uuid = { workspace = true }
+chrono = { workspace = true }
+bytes = { workspace = true }
+url = { workspace = true }
+mime = { workspace = true }
+async-trait = { workspace = true }
+parking_lot = { workspace = true }
+notify = { workspace = true }
+mime_guess = { workspace = true }
+dirs = { workspace = true }
+urlencoding = { workspace = true }
+reqwest = { workspace = true }
+hostname = "0.4"
+
+[dev-dependencies]
+tokio-test = { workspace = true }
+wiremock = { workspace = true }

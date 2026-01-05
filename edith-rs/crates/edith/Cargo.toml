@@ -1,0 +1,30 @@
+[package]
+name = "edith"
+description = "Edith - Personal AI Assistant Gateway"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+edith-config = { workspace = true }
+edith-gateway = { workspace = true }
+edith-session = { workspace = true }
+edith-providers = { workspace = true }
+edith-llm = { workspace = true }
+edith-scheduler = { workspace = true }
+
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+async-trait = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+
+[dev-dependencies]
+tokio-test = { workspace = true }

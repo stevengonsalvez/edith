@@ -1,0 +1,41 @@
+[package]
+name = "edith-providers"
+description = "Messaging provider integrations for Edith"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[dependencies]
+edith-config = { workspace = true }
+edith-session = { workspace = true }
+
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+thiserror = { workspace = true }
+anyhow = { workspace = true }
+tracing = { workspace = true }
+async-trait = { workspace = true }
+chrono = { workspace = true }
+uuid = { workspace = true }
+reqwest = { workspace = true }
+bytes = { workspace = true }
+mime = { workspace = true }
+url = { workspace = true }
+futures = { workspace = true }
+futures-util = { workspace = true }
+parking_lot = { workspace = true }
+tokio-tungstenite = { workspace = true }
+regex = { workspace = true }
+
+# Telegram
+teloxide = { workspace = true }
+
+# Discord
+serenity = { workspace = true }
+
+[dev-dependencies]
+tokio-test = { workspace = true }
+wiremock = { workspace = true }
